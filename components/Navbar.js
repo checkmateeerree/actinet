@@ -30,7 +30,9 @@ const Navbar = () => {
                         <Image src={actinetLogo} height="60" width="200" alt="actinet Logo"/>
                     </Link>
                 </div>
-                <Button variant="outlined" color="warning">Register</Button>
+                <Link href="/register">
+                    <Button variant="outlined" color="warning">Register</Button>
+                </Link>
                 <IconButton
                 size="large"
                 edge="start"
@@ -46,72 +48,67 @@ const Navbar = () => {
                 <Drawer
                     anchor={'right'}
                     open={drawerOpen}
-                    onClose={() => toggleDrawers(false)}
-                    
+                    onClose={() => toggleDrawers(false)}    
                 >
                     
-                    <Box sx={{width: "25vw"}}>
+                    <Box sx={{width: "250px"}}>
                     <IconButton onClick={() => toggleDrawers(false)}>
                         <ChevronRightIcon />
                     </IconButton>
                     <Divider />
                     <List>
-             <Link href="/">
-        <ListItem button key={"Home"} onClick={()=> toggleDrawers(false)}>
+                        <Link href="/">
+                            <ListItem button key={"Home"} onClick={()=> toggleDrawers(false)}>
+                                <ListItemIcon>
+                                    <HomeOutlinedIcon/>
+                                </ListItemIcon>
            
-                <ListItemIcon>
-                    <HomeOutlinedIcon/>
-                </ListItemIcon>
-           
-            <ListItemText primary={"Home"} />
-        </ListItem>
-        </Link>
-        <Link href="/about">
-        <ListItem button key={"About Us"} onClick={()=> toggleDrawers(false)}>
-           
-                <ListItemIcon>
-                    <InfoOutlinedIcon/>
-                </ListItemIcon>
-            
-                <ListItemText primary={"About Us"} />
+                                <ListItemText primary={"Home"} />
+                            </ListItem>
+                        </Link>
+                        <Link href="/about">
+                            <ListItem button key={"About Us"} onClick={()=> toggleDrawers(false)}>
+                            <ListItemIcon>
+                                <InfoOutlinedIcon/>
+                            </ListItemIcon>
+                            <ListItemText primary={"About Us"} />
       
-        </ListItem>
-        </Link>
-        <Link href="/donate">
-        <ListItem button key={"Donate"} onClick={()=> toggleDrawers(false)}>
-            
-                <ListItemIcon>
-                    <MonetizationOnOutlinedIcon/>
-                </ListItemIcon>
-                
-                <ListItemText primary={"Donate"} />
+                            </ListItem>
+                        </Link>
+                        <Link href="/donate">
+                            <ListItem button key={"Donate"} onClick={()=> toggleDrawers(false)}> 
+                            <ListItemIcon>
+                                <MonetizationOnOutlinedIcon/>
+                            </ListItemIcon>
+                            <ListItemText primary={"Donate"} />
+
+                            </ListItem>
+                        </Link>
+                        <Link href="/contact">
+                            <ListItem button key={"Contact Us"} onClick={()=> toggleDrawers(false)}>
+                            <ListItemIcon>
+                                <EmailOutlinedIcon />
+                            </ListItemIcon>
            
-        </ListItem>
-        </Link>
-        <Link href="/contact">
-        <ListItem button key={"Contact Us"} onClick={()=> toggleDrawers(false)}>
-           
-                <ListItemIcon>
-                    <EmailOutlinedIcon />
-                </ListItemIcon>
-           
-                <ListItemText primary={"Contact Us"} />
-          
-        </ListItem>
-        </Link>
+                            <ListItemText primary={"Contact Us"} />
+                    
+                            </ListItem>
+                        </Link>
+                        <Divider />
     
-        <Link href="/login">
-        <ListItem button key={"Login"} onClick={()=> toggleDrawers(false)}>
-           
-                <ListItemIcon>
-                    <LockOutlinedIcon />
-                </ListItemIcon>
-           
-                <ListItemText primary={"Login"} />
-          
-        </ListItem>
-        </Link>
-    </List>
+                        <Link href="/login">
+                            <ListItem button key={"Login"} onClick={()=> toggleDrawers(false)}>
+                        
+                            <ListItemIcon>
+                                <LockOutlinedIcon />
+                            </ListItemIcon>
+                    
+                            <ListItemText primary={"Login"} />
+                        
+                            </ListItem>
+                        </Link>
+                        <Divider />
+                    </List>
                    
                     </Box>
                 </Drawer>
