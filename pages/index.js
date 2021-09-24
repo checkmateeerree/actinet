@@ -1,6 +1,3 @@
-
 export default function Index() {
-  return (
-    <h1>i</h1>
-  );
+  return <h1>hi</h1>;
 }
