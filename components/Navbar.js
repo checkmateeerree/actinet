@@ -72,12 +72,11 @@ const Navbar = () => {
             >
               <Box sx={{ width: "250px" }}>
                 <IconButton onClick={() => toggleDrawers(false)}>
-                  <ChevronRightIcon />
+                  <ChevronRightIcon sx={{ fontSize: 40, marginY: 0.85, marginX: 0.85 }}/>
                 </IconButton>
                 <Divider />
                 <List>
                   {pathList.map((path) => {
-                    console.log(path);
                     return (
                       <Link href={path[0]} key={path[1]}>
                         <ListItem
