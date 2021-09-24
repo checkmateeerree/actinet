@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <Container className="border-top fixed-bottom">
        <footer className="my-4">
-         <div class="d-flex justify-content-between">
+         <div className="d-flex justify-content-between">
           <p className="pt-3">Copyright © 2021 actinet.</p>
           <div className="pt-2">
             <Button>
