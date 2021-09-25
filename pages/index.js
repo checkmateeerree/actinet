@@ -1,3 +1,9 @@
+import { Container, Button } from "@mui/material";
+import Getter from "../components/Getter";
+
 export default function Index() {
-  return <h1>hi</h1>;
+  return (
+    <Getter />
+    
+  );
 }
