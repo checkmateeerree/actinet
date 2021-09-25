@@ -9,7 +9,7 @@ const Footer = () => {
     <Container className="border-top fixed-bottom">
        <footer className="my-4">
          <div className="d-flex justify-content-between">
-          <p className="pt-3">Copyright © 2021 actinet.</p>
+          <p className="pt-3">actinet © 2021</p>
           <div className="pt-2">
             <Button>
               <InstagramIcon />
