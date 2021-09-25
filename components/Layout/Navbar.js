@@ -6,7 +6,7 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
 import { List, ListItem, ListItemText, ListItemIcon } from "@mui/material";
-import actinetLogo from "../public/actinet_logo.png";
+import actinetLogo from "../../public/actinet_logo.png";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import IconButton from "@mui/material/IconButton";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";

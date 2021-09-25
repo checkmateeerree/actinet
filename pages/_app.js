@@ -1,7 +1,7 @@
 
 import {useEffect} from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
-import Layout from '../components/Layout';
+import Layout from '../components/Layout/Layout';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
